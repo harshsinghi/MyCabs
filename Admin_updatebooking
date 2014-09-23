@@ -1,0 +1,91 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.master" AutoEventWireup="true" CodeFile="Admin_updatebooking.aspx.cs" Inherits="Admin_updatebooking" %>
+
+<%@ Register assembly="EO.Web" namespace="EO.Web" tagprefix="eo" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+
+   .box
+        {
+            border:2px solid #a1a1a1;
+              
+                border-radius:25px;
+        }
+         .box
+        {
+            border:2px solid #a1a1a1;
+              
+                border-radius:25px;
+     }
+         </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <p>
+        <br />
+        <br />
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:Label ID="Label13" runat="server" style="font-weight: 700" 
+            Text="Booking ID"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtbookid" runat="server" Height="26px" Width="143px" 
+            CssClass="box"></asp:TextBox>
+    </p>
+    <p>
+        <br />
+        <asp:Label ID="Label3" runat="server" style="font-weight: 700" 
+            Text="Source"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtsource" runat="server" Height="25px" Width="141px" 
+            CssClass="box"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+        <br />
+        <asp:Label ID="Label4" runat="server" style="font-weight: 700" 
+            Text="Destination"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtdest" runat="server" AutoPostBack="true" 
+             CssClass="box" Height="25px" 
+            Width="140px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        <asp:TextBox ID="txtstatus0" runat="server" Height="25px" Width="142px" 
+            CssClass="box" Visible="False">null</asp:TextBox>
+       
+        <br />
+        <br />
+        <asp:Label ID="Label5" runat="server" style="font-weight: 700" Text="Status"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtstatus" runat="server" Height="25px" Width="142px" 
+            CssClass="box"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Height="38px" style="font-weight: 700" 
+            Text="Update" Width="108px" onclick="Button1_Click" />
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+    <p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </p>
+</asp:Content>
+
