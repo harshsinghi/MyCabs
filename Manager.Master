@@ -1,0 +1,125 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="manage.master.cs" Inherits="manage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>MyCabs</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <style type="text/css">
+        .style1
+        {
+            width: 224px;
+            height: 71px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1>
+              <img alt="" class="style1" src="images/cab.jpg" /></h1>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="Manage_home.aspx">Home</a></li>
+            <li><a href="#">Cabs Report</a>
+            <ul>
+                 <li><a href="Report3.aspx" target="_blank">Self-Drive Cabs</a></li>
+                 <li><a href = "Report4.aspx" target="_blank">CarPooling Cabs</a></li>
+            </ul>
+            </li>
+
+            <li><a href="#">Route Reports</a>
+            <ul>
+            <li><a href="Report2.aspx" target="_blank">Routing Details</a></li>
+            
+
+            </ul>
+            </li>
+
+            <li><a href="#">User Reports</a>
+            <ul>
+            <li><a href="Report1.aspx" target="_blank">Users</a></li>
+            <li><a href = "Report6.aspx" target="_blank">Self-Cabs Booked</a></li>
+
+            </ul>
+            </li>
+             <li><a href="#">Employee Reports</a>
+            <ul>
+            <li><a href="Report5.aspx" target="_blank">Employees</a></li>
+            
+
+            </ul>
+            </li>
+            <li><a href="#">Feedback Reports</a>
+              <ul>
+                 
+                    <li><a href="Report7.aspx">Feedbacks</a></li>
+                    
+                    
+              </ul>
+            </li>
+                
+            <li><a href="Home.aspx">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h4>New cars to be added soon</h4>
+          <h5>September 28,2013</h5>
+          <p>2013, GPS tracking system to be added.</p>
+        </div>
+      </div>
+      <div class="content">
+        <h1>&nbsp;Management Section</h1>
+          <p>
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              </asp:ContentPlaceHolder>
+          </p>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="images/twitter.png" alt="twitter"/>&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
+      <p><a href="Manage_home.aspx">Home <a href="Home.aspx">Logout</a></p>
+      <p>Copyright &copy; Mycabs |Designed by Harsh &nbsp Ashwin &nbsp Geethu</p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $('ul.sf-menu').sooperfish();
+          $('.top').click(function () { $('html, body').animate({ scrollTop: 0 }, 'fast'); return false; });
+      });
+  </script>
+    </form>
+</body>
+</html>
+
