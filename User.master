@@ -1,0 +1,185 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="admin" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css"  type="text/css" rel="Stylesheet"/> 
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+         .box
+        {
+            border:2px solid #a1a1a1;
+              
+                border-radius:25px;
+     }
+         .style1
+        {
+            width: 100%;
+            height: 886px;
+        }
+        .style4
+        {
+            text-decoration: none;
+        }
+        .style6
+        {
+            height: 665px;
+            width: 3716px;
+        }
+        .style8
+        {
+            width: 449px;
+            border-bottom-right-radius: 50px 25px; padding:1cm;
+            border-top-left-radius: 50px 25px; padding:1cm;
+            border-bottom-left-radius: 50px 25px; padding:1cm;
+        }
+        .style10
+        {
+            background-color: Black;
+            border-bottom-left-radius: 50px 25px; padding:1cm;
+            border-top-right-radius: 50px 25px; padding: 1cm;
+            border-bottom-right-radius: 50px 25px; padding: 1cm;
+            }
+        .style12
+        {
+            width: 132px;
+            height: 41px;
+        }
+        .style13
+        {
+            height: 3px;
+            border-top-left-radius: 50px 25px; padding:1cm;
+            border-top-right-radius: 50px 25px; padding:1cm;
+            color: #FFFF66;
+        }
+        .style14
+        {
+            width: 159px;
+            height: 68px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td bgcolor="Black" colspan="3" 
+                     
+                    class="style13">
+                    &nbsp;<img alt="" class="style14" src="images/cab.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Panel 
+                        ID="Panel1" runat="server" style="margin-left: 187px" Height="16px" 
+                        Width="931px">
+                        &nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp<a href="Feedback.aspx" class="style4"><asp:ContentPlaceHolder 
+                        ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                        <asp:Label href= "Login.aspx" ID="Label2" runat="server" Text="Logout"  
+                            style="font-size: large; font-weight: 700"></asp:Label>
+                    </a><div id="navbar">
+                    <div id ="holder">
+                    <ul>
+                    <li><a href="User_Home.aspx">&nbsp; HOME</a></li>
+                    <li><a href="User_Pickdropselect.aspx">PICK & DROP</a></li>
+                    <li><a href="User_carpoolingselect.aspx">CarPooling</a></li>
+                    <li><a href="User_selfdrive1.aspx">SELF DRIVE</a></li>
+                    <li><a href="User_Profile.aspx">Profile</a></li>
+                 <!--   <li style="background-position: inherit; background-image: url('/cab_site/images/background.jpg'); background-repeat: no-repeat; background-attachment: fixed"><a href="carpooling.aspx">CAR POOLING</a></li>-->
+                    <li><a href="User_Feedback.aspx">FEEDBACK</a></li>
+                    
+                        &nbsp;
+                        </div>
+                        </div>
+                    </asp:Panel>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+            </tr>
+            <tr>
+                <td class="style10" 
+                                       <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        <p style="width: 160px; background-color: #000000;">
+                            <br />
+                            <%--<asp:ScriptManager ID="ScriptManager1" runat="server">
+                            </asp:ScriptManager>
+
+                            <asp:Timer ID="Timer1" runat="server" OnTick="gettickvalue" Interval="2000">
+
+                            </asp:Timer>
+                            <asp:Panel ID="Panel2" runat="server" height="300px">
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                                <Triggers>
+                                <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                                </Triggers>
+                                <ContentTemplate>
+                                <asp:Image ID = "imgBanner" ImageUrl="~/images/back.jpg" runat="server" />
+
+                                 </ContentTemplate>
+                                </asp:UpdatePanel>
+                            
+                            </asp:Panel>
+                            --%>
+                           <br />
+                            <br />
+                            <br />
+                            <br />
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                <br />
+                                <br />
+                            </asp:ContentPlaceHolder>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                    <asp:Label ID="Label1" runat="server" Text="[Label]" Visible="False"></asp:Label>
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td bgcolor="#FFFFCC" class="style6" 
+                    >
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="style8" bgcolor="Black">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                        <p>
+                            <img alt="" class="style12" src="images/ezeego1_logo-160x51.png" /></p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#999966" class="style4" colspan="3" 
+                    style="background-image: url('/cab_site/images/background.jpg')">
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    <div class="box" style="height: 70px; background-color:Black">
+    <footer>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="images/twitter.png" alt="twitter" style="height: 27px; width: 22px" />&nbsp;<img 
+            src="images/facebook.png" alt="facebook" style="height: 26px; width: 21px" />&nbsp;<img 
+            src="images/rss.png" alt="rss" style="height: 24px; width: 26px" /><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <font color = "blue ">Copyright ©&nbsp;2013 MyCabs India Pvt. Ltd</font> <a href="Designteam.aspx">Designed by Harsh&nbsp;&nbsp; 
+            Ashwin&nbsp;&nbsp; Geethu </a>
+      </footer>
+    </div>
+</body>
+</html>
